@@ -1,0 +1,15 @@
+[[source]]
+verify_ssl = true
+url = "https://pypi.org/simple"
+name = "pypi"
+
+[requires]
+python_version = "3.7"
+
+[dev-packages]
+black = "==18.6b"
+
+[packages]
+
+[pipenv]
+allow_prereleases = true

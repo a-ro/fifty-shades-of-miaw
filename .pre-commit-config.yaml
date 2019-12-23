@@ -1,0 +1,10 @@
+repos:
+  - repo: local
+    hooks:
+      - id: black-formatter
+        name: Format Python with Black
+        entry: pipenv run black --check -l 120 
+        pass_filenames: True
+        language: system
+        verbose: True
+        types: [python]
