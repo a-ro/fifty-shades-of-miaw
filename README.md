@@ -1,6 +1,6 @@
 # fifty-shades-of-miaw
 Neural Style Transfer on cat pictures.
-See blog post that describes the project [here](www.trinilearn.com/neural-style-transfer-50-shades-of-miaw/).
+See blog post that describes the project [here](https://www.trinilearn.com/neural-style-transfer-50-shades-of-miaw/).
 
 ## Neural Style Transfer
 A Neural Style Transfer model takes two images as input and generates a new image.
