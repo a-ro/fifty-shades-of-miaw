@@ -7,13 +7,12 @@ name = "pypi"
 python_version = "3.7"
 
 [dev-packages]
-black = "==18.6b"
+black = "*"
 
 [packages]
-tensorflow-gpu = "==2.0"
-tensorflow-hub = "*"
 pillow = "*"
-matplotlib = "*"
+tensorflow-gpu = "~=2.1"
+tensorflow-hub = "*"
 
 [pipenv]
 allow_prereleases = true
