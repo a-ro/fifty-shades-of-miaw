@@ -42,13 +42,14 @@ class NeuralStyleTransfer:
         save_directory_path: str,
         is_saving_content: bool = False,
         is_saving_style: bool = False,
-    ) -> None:
+    ) -> Image:
         predicted_image = self.predict(content_tensor, style_tensor)
         predicted_image.save(join(save_directory_path, f"{image_id}.png"))
         if is_saving_content:
             save_image_from_tensor(save_directory_path, f"{image_id}-content.png", content_tensor)
         if is_saving_style:
             save_image_from_tensor(save_directory_path, f"{image_id}-style.png", style_tensor)
+        return predicted_image
 
     def predict(self, content_tensor: tf.Tensor, style_tensor: tf.Tensor) -> Image:
         predicted_tensor = self.model(content_tensor, style_tensor)
