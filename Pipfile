@@ -10,7 +10,7 @@ python_version = "3.7"
 black = "*"
 
 [packages]
-pillow = "*"
+pillow = ">=7.1.0"
 tensorflow-gpu = "~=2.1"
 tensorflow-hub = "*"
 
