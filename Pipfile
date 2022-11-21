@@ -11,7 +11,7 @@ black = "*"
 
 [packages]
 pillow = ">=8.1.0"
-tensorflow-gpu = "~=2.1"
+tensorflow-gpu = "~=2.9"
 tensorflow-hub = "*"
 
 [pipenv]
